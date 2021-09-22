@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de música</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="">
+    <link rel="stylesheet" href="css/controls-footer.css" type="text/css" media="">
+    <link rel="stylesheet" href="css/list.css" type="text/css" media="">
+    <link rel="stylesheet" href="css/header.css" type="text/css" media="">
+
+    <link rel="stylesheet" href="css/fontello.css" type="text/css" media="">
+
+</head>
+<body>
+
+    <div class="content-all">
+
+      <!-- HEADER -->
+      <div class="header">
+
+        <span class="icon-shuffle choose-random" id="choose-random"></span>
+
+        <div class="song-title">
+          <h2 id="song-title">Título canción</h2>
+        </div>
+
+        <div>
+          <input type="file" id="add-songs" multiple="" accept="audio/mp3, .m4a, .wav, .vox, .ogg">
+          <label for="add-songs" class="add-song"><span class="icon-plus"></span></label>
+        </div>
+
+
+      </div>
+
+
+      <!-- MUSIC LIST -->
+      <div class="content-music-list">
+        <div class="music-list">
+
+        </div>
+      </div>
+
+
+      <!-- CONTROLS -->
+      <div class="content-controls">
+        <audio id="audio" autoplay></audio>
+
+        <canvas id="canvas" class="bar" height="30px" width="500px"></canvas>
+
+        <div class="controls">
+          <span class="icon-shuffle random control-button" id="shuffle"></span>
+          <span class="icon-prev control-button" id="prev"></span>
+          <span class="icon-pause play control-button" id="play"></span>
+          <span class="icon-next control-button" id="next"></span>
+          <span class="icon-right loop control-button" id="loop"></span>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- CONTROLS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="src/js/musicController.js"></script>
+    <script src="src/js/loadMusic.js"></script>
+    <script src="src/js/main.js"></script>
+
+</body>
+</html>

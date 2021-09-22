@@ -1,0 +1,64 @@
+.content-controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.bar {
+  width: 85%;
+  height: auto;
+  max-width: 500px;
+  max-height: 30px;
+  display: block;
+  margin: auto;
+}
+
+.controls {
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.control-button {
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-button:hover {
+  transition: background .3s;
+  background-color: var(--bg-hover);
+}
+
+.icon-shuffle, .loop {
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.icon-next, .icon-prev {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+}
+
+.play {
+  width: 55px;
+  height: 55px;
+  font-size: 23px;
+  border: solid 1px #fff;
+}
+
+.icon-shuffle.active {
+  color: #5d5d5d;
+}

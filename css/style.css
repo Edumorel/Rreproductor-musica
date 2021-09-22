@@ -1,0 +1,33 @@
+:root {
+  --bg-hover: rgba(255, 255, 255, .1);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: url('../src/img/background2.jpg');
+  color: #c4c4c4;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.content-all {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .7);
+  display: grid;
+  grid-template-rows: 90px 1fr 190px;
+}
